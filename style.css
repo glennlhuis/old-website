@@ -1,14 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 body {
-    font-family: "Open Sans", sans-serif;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    font-family: 'Montserrat', sans-serif;
+    color:   #73AF59;
     position: relative;
-    background: transparent;
+    background: #000000;
   }
 
   h1, h2, h3, h4, h5, h6 {
-      font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
   }
+
+  a {
+    color: #62974c;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #f1f1f1;
+    text-decoration: none;
+  }
+  
 
   /* Header */
 
@@ -20,6 +32,35 @@ body {
       margin-left: 20%;
       z-index: 997;
       overflow-y: auto;
+  }
+
+  #header h1 span {
+    color: #fff;
+    border-bottom: 2px solid #73AF59;
+    padding-bottom: 3px;
+  }
+
+  #header .socials {
+    margin-top: 50px;
+    display: flex;
+  }
+  
+  #header .socials a {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    line-height: 1;
+    margin-right: 15px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  
+  #header .socials a:hover {
+    background: #73AF59;
   }
 
 
