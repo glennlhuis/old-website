@@ -34,6 +34,10 @@ body {
       overflow-y: auto;
   }
 
+  #header * {
+    transition: ease-in-out 0.3s;
+  }
+
   #header h1 span {
     color: #fff;
     border-bottom: 2px solid #73AF59;
@@ -63,7 +67,7 @@ body {
     background: #73AF59;
   }
 
-
+/**NAVIGATION Menu*/
 
   .navbar{
       padding: 0;
@@ -86,19 +90,57 @@ body {
       margin-left: 30px;
   }
 
+  .navbar a, .navbar a:focus{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+
+  .navbar a i, .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+
+  .navbar a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #9be27c;
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  .navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+    visibility: visible;
+    width: 30px;
+  }
+  
+  .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    color: #fff;
+  }
   /*Sections*/
 
-  section {
+ section {
     overflow: hidden;
     position: absolute;
     width: 100%;
     top: 140px;
     bottom: 100%;
-    opacity: 0;
+    opacity: 1;
     transition: ease-in-out 0.4s;
     z-index: 2;
   }
-  
+ 
   section.section-show {
     top: 100px;
     bottom: auto;
@@ -110,7 +152,7 @@ body {
     background: rgba(0, 0, 0, 0.9);
     padding: 30px;
   }
-  
+    
   @media (max-width: 768px) {
     section {
       top: 120px;
@@ -119,7 +161,7 @@ body {
       top: 80px;
     }
   }
-  
+
   .section-title h2 {
     font-size: 14px;
     font-weight: 500;
@@ -137,7 +179,7 @@ body {
     width: 120px;
     height: 1px;
     display: inline-block;
-    background: #A90011;
+    background: #9be27c;
     margin: 4px 10px;
   }
   
@@ -183,5 +225,47 @@ body {
   .about-me .content p:last-child {
     margin-bottom: 0;
   }
+
+  /*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+.counts {
+  padding: 70px 0 60px;
+}
+
+.counts .count-box {
+  padding: 30px 30px 25px 30px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.counts .count-box i {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  color: #D11D27;
+  border-radius: 50px;
+  line-height: 0;
+}
+
+.counts .count-box span {
+  font-size: 36px;
+  display: block;
+  font-weight: 600;
+  color: #fff;
+}
+
+.counts .count-box p {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
 
   
