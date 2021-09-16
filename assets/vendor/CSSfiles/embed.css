@@ -1,0 +1,33 @@
+.testdome-certificate-stamp {
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  width: 185px;
+  height: 120px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  text-align: left;
+  padding: 10px;
+  position: relative;
+  box-sizing: border-box;
+  text-transform: uppercase; }
+  .testdome-certificate-stamp.gold {
+    background-image: url("../../images/stamp-gold.png?v=2"); }
+  .testdome-certificate-stamp.silver {
+    background-image: url("../../images/stamp-silver.png?v=2"); }
+  .testdome-certificate-stamp span {
+    display: block;
+    color: #ffffff;
+    font-size: 11px;
+    text-decoration: none;
+    margin-bottom: 5px; }
+    .testdome-certificate-stamp span.testdome-certificate-name {
+      font-size: 14px;
+      text-transform: none; }
+    .testdome-certificate-stamp span.testdome-certificate-card-logo {
+      position: absolute;
+      bottom: 5px; }
+  .testdome-certificate-stamp:hover {
+    text-decoration: none; }
+    .testdome-certificate-stamp:hover span {
+      text-decoration: none; }
