@@ -132,7 +132,7 @@ body {
 
  section {
     overflow: hidden;
-    position: absolute;
+    /*position: absolute;*/
     width: 100%;
     top: 140px;
     bottom: 100%;
@@ -172,6 +172,8 @@ body {
     text-transform: uppercase;
     color: #aaaaaa;
     font-family: "Poppins", sans-serif;
+  /*  writing-mode: vertical-rl;
+    text-orientation: upright;*/
   }
   
   .section-title h2::after {
@@ -218,7 +220,7 @@ body {
   .about-me .content ul i {
     font-size: 16px;
     margin-right: 5px;
-    color: #D11D27;
+    color: #3f6130;
     line-height: 0;
   }
   
